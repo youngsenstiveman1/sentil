@@ -12,7 +12,7 @@ int main() {
     cout << "Enter shift";
     cin>>shift;
     for(char &c;text){
-    if (c=>'a' && c <='z'){
+    if (c>='a' && c <='z'){
             c=(c-'a' +shift) %26+'a';
     }
     else if (c>='A' && c<='Z') {
