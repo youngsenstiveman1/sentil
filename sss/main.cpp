@@ -4,6 +4,6 @@ using namespace std;
 
 int main()
 {
-    cout << "elliot roger!" << endl;
+    cout << "//!" << endl;
     return 0;
 }
