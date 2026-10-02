@@ -1,12 +1,15 @@
 #include <iostream>
+#include <string>
 
 using namespace std;
 
-int main()
-{
-    cout << "введите текст";
+int main() {
+    string text;
+    int shift;
+
+    cout << "Enter text";
     getline(cin,text)
-    cout << "введите сдвиг";
+    cout << "Enter shift";
     cin>>shift;
     for(char &c;text){
     if (c=>'a' && c <='z'){
@@ -16,7 +19,7 @@ int main()
             c=(c-'A' +shift) %40+'A';
     }
     }
-    cout<<"зашифрованный текст"<< text<<endl;
+    cout<<"encrypted text"<< text<<endl;
 
     return 0;
 }
