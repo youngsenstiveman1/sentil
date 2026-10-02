@@ -13,10 +13,10 @@ int main() {
     cin>>shift;
     for(char &c;text){
     if (c=>'a' && c <='z'){
-            c=(c-'a' +shift) %40+'a';
+            c=(c-'a' +shift) %26+'a';
     }
-    else if (c>='A' && C<='Z') {
-            c=(c-'A' +shift) %40+'A';
+    else if (c>='A' && c<='Z') {
+            c=(c-'A' +shift) %26+'A';
     }
     }
     cout<<"encrypted text"<< text<<endl;
