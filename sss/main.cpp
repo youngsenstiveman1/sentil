@@ -15,7 +15,7 @@ int main() {
     if (c>='a' && c =<'z'){
             c=(c-'a' +shift) %26+'a';
     }
-    else if (c>='A' && c<='Z') {
+    else if (c>='A' && c=<'Z') {
             c=(c-'A' +shift) %26+'A';
     }
     }
