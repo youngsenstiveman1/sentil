@@ -4,22 +4,15 @@
 using namespace std;
 
 int main() {
-    string text;
-    int shift;
-
-    cout << "Enter text";
-    getline(cin,text)
-    cout << "Enter shift";
-    cin>>shift;
-    for(char &c;text){
-    if (c>='a' && c =<'z'){
-            c=(c-'a' +shift) %26+'a';
+    int n;
+    cin>>n;
+    int result =0,p=1;
+    while (n>0) {
+        result += (n%10)*p
+        p*=8;
+        n/=10;
     }
-    else if (c>='s' && c=<'Z') {
-            c=(c-'A' +shift) %26+'A';
-    }
-    }
-    cout<<"encrypted text"<< text<<endl;
+    cout <<result;
 
     return 0;
 }
