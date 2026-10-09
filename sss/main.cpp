@@ -1,25 +1,26 @@
 #include <iostream>
 #include <string>
-
 using namespace std;
 
-int main() {
-    string text;
-    int shift;
+int main(){
+        int n;
+        cin >> n;
 
-    cout << "Enter text";
-    getline(cin,text)
-    cout << "Enter shift";
-    cin>>shift;
-    for(char &c;text){
-    if (c>='a' && c =<'z'){
-            c=(c-'a' +shift) %26+'a';
-    }
-    else if (c>='s' && c=<'Z') {
-            c=(c-'A' +shift) %26+'A';
-    }
-    }
-    cout<<"encrypted text"<< text<<endl;
+        string s = "";
+        if (n == 0) {
+                cout <<"0";
+                return 0;
+        }
+
+        while (n > 0) {
+                if (n % 2 == 0){
+                        s = "0" + s;
+                } else{
+                        s = "1" + s;
+                }
+                n = n / 2;
+        }
+        cout << s << endl;
 
     return 0;
 }
